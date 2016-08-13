@@ -1,7 +1,7 @@
 CryptoAccel
 ===========
 
-Use the on-chip cryptographic accelerator for symetric cyphers and one-way hash algorithms.
+Use the on-chip cryptographic accelerator for symmetric cyphers and one-way hash algorithms.
 
 This software may only be used with as part of a programmable processing unit (e.g. a microprocessor, microcontroller, or digital signal processor) supplied directly or indirectly from Freescale.  See Freescale_License.txt for details.
 
@@ -49,7 +49,7 @@ Decrypt a single 16-byte block
            nr         number of AES rounds (10, 12, 14 = f(key_schedule))
           *out        pointer to 16-byte block of output plaintext
     
-   NOTE   Input and output blocks may overlap
+          NOTE   Input and output blocks may overlap
 
 
 DES
@@ -79,7 +79,7 @@ Encrypt a single 8-byte block
           *key        pointer to 64-bit DES key with parity bits
           *out        pointer to 8-byte block of output ciphertext
     
-    NOTE   Input and output blocks may overlap
+          NOTE   Input and output blocks may overlap
 
 
 Decrypt a single 8-byte block
@@ -93,7 +93,7 @@ Decrypt a single 8-byte block
           *key        pointer to 64-bit DES key with parity bits
           *out        pointer to 8-byte block of output plaintext
     
-    NOTE   Input and output blocks may overlap
+          NOTE   Input and output blocks may overlap
    
 
 MD5
@@ -169,7 +169,7 @@ Perform the hash and generate SHA1 state variables for one or more input message
           *sha1_state pointer to 160-bit block of SHA1 state variables:
                       a,b,c,d,e
     
-    NOTE   Input message and state variable output blocks must not overlap
+          NOTE   Input message and state variable output blocks must not overlap
 
 
 
@@ -221,7 +221,7 @@ Update SHA256 digest output for one or more message block arguments
            input      number of 512-bit blocks to process
           *output     pointer to 256-bit message digest output
     
-    NOTE   Input message and digest output blocks must not overlap
+          NOTE   Input message and digest output blocks must not overlap
  
 
 
